@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<style>
+	table, th,td{
+		border:1px solid red;
+
+	</style>
+	
+<head>
+	<title>HTML5 Quiz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="quizcss/style.css" type="text/css" />
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="pull-left">HTML5 Quiz</div>
+			<div class="pull-right">Prove your knowledge in HTML</div>
+		</header>
+		<main>
+			<form class="questionForm" id="q1" data-question="1">
+				<table style ="width:100%">
+				<th><h3>1. Inside which HTML element do we put the JavaScript?</h3></th>
+				<ul>
+					<table style ="width:100%">
+				<tr><th><li><input name="q1" type="radio" value="a" />&lt;javascript&gt;</li></th>
+				</tr>
+				<tr><th><li><input name="q1" type="radio" value="b" />&lt;js&gt;</li></th></tr>
+				</tr>
+				<tr><th><li><input name="q1" type="radio" value="c" />&lt;script&gt;</li></th></tr>
+				</tr>
+				<tr><th><li><input name="q1" type="radio" value="d" />&lt;scripting&gt;</li></th></tr>
+				</tr>
+			</table>
+				</ul>
+				<button id="submit">Submit</button>
+			</form>
+			
+			<form class="questionForm" id="q2" data-question="2">
+				<table style ="width:100%">
+				<th><h3>2.What is the correct JavaScript syntax to write "Hello World"?  </h3></th>
+				<ul>
+					<table style ="width:100%">
+					<tr><th><li><input name="q2" type="radio" value="a" />response.write("Hello World")</li></th></tr>
+					<tr><th><li><input name="q2" type="radio" value="b" />"Hello World"</li></th></tr>
+					<tr><th><li><input name="q2" type="radio" value="c" />document.write("Hello World")</li></th></tr>
+					<tr><th><li><input name="q2" type="radio" value="d" />("Hello World")</li></th></tr>
+			</table>
+			</ul>
+				<button id="submit">Submit</button>
+			</form>
+			
+			<form class="questionForm" id="q3" data-question="3">
+				<table style ="width:100%">
+				<th><h3>3. What is the correct syntax for referring to an external script called "xxx.js"?</h3></th>
+				<ul>
+					<table style ="width:100%">
+					<tr><th><li><input name="q3" type="radio" value="a" />&lt;script src="xxx.js"&gt;</li></th></tr>
+					<tr><th><li><input name="q3" type="radio" value="b" />&lt;script name="xxx.js"&gt;</li></th></tr>
+					<tr><th><li><input name="q3" type="radio" value="c" />&lt;script href="xxx.js&gt;</li></th></tr>
+					<tr><th><li><input name="q3" type="radio" value="d" />&lt;script value="xxx.js&gt;</li></th></tr>
+				
+			</table>
+			</ul>
+				<button id="submit">Submit</button>
+			</form>
+			
+			<form class="questionForm" id="q4" data-question="4">
+				<table style ="width:100%">
+				<th><h3>4. How do you create a function?</h3></th>
+				<ul>
+					<table style ="width:100%">
+					<tr><th><li><input name="q4" type="radio" value="a" />function:myFunction();</li></th></tr>
+					<tr><th><li><input name="q4" type="radio" value="b" />function=myFunction()</li></th></tr>
+					<tr><th><li><input name="q4" type="radio" value="c" />function myFunction() </li></th></tr>
+					<tr><th><li><input name="q4" type="radio" value="d" />myFunction():function</li></th></tr>
+				</table>
+				</ul>
+				<button id="submit">Submit</button>
+			</form>
+			
+			<form class="questionForm" id="q5" data-question="5">
+				<table style ="width:100%">
+				<th><h3>5. What is the full form of HTML?</h3></th>
+				<ul>
+					<table style ="width:100%">
+					<tr><th><li><input name="q5" type="radio" value="a" />Hyper text markup language</li></th></tr>
+					<tr><th><li><input name="q5" type="radio" value="b" />Hyper transform mark linguist</li></th></tr>
+					<tr><th><li><input name="q5" type="radio" value="c" />Homo text mark language</li></th></tr>
+					<tr><th><li><input name="q5" type="radio" value="d" />All of these</li></th></tr>
+				</table>
+				</ul>
+				<button id="submit">Submit</button>
+			</form>
+			
+			<div id="results"></div>
+			<br>
+		</main>
+		<footer>
+			<div class="pull-left">Total: 5 Questions</div>
+			<div class="pull-right"></div>
+		</footer>
+	</div>
+	<script src="quizjs/jquery.js"></script>
+	<script src="quizjs/quiz.js"></script>
+</body>
+</html>
